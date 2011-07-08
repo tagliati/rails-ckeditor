@@ -1,4 +1,4 @@
-class Ckeditor::PicturesController < Ckeditor::BaseController
+class Ckeditor::PicturesController < Ckeditor::AdminController
 
   def index
     @pictures = Ckeditor.image_model.order("id DESC")
